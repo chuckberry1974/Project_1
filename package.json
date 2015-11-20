@@ -8,9 +8,9 @@
     "test": "standard",
     "clean": "rm -rf dist",
     "build": "npm run clean && mkdir dist && npm run build-html && npm run build-css && npm run build-js",
-    "build-html": "cp game/index.html dist/index.html",
-    "build-css": "cp game/game.css dist/game.css",
-    "build-js": "browserify game/game.js --outfile dist/game.js --transform babelify"
+    "build-html": "cp index.html dist/index.html",
+    "build-css": "cp memo_game.css dist/memo_game.css",
+    "build-js": "browserify memo_game.js --outfile dist/memo_game.js --transform babelify"
   },
   "repository": {
     "type": "git",
@@ -22,12 +22,12 @@
   "author": "Steve",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chuckberry1974/wdi-sg-homework/issues"
+    "url": "https://github.com/chuckberry1974/Project_game/issues"
   },
-  "homepage": "https://github.com/chuckberry1974/wdi-sg-homework#readme",
+  "homepage": "https://github.com/chuckberry1974/Project_game#readme",
   "dependencies": {
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "http-server": "^0.8.5"
-  }
+  },
 }
