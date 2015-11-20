@@ -1,33 +1,31 @@
 {
-  "name": "Project_game",
+  "name": "yes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Memory game",
   "main": "memo_game.js",
   "scripts": {
-    "start": "npm run build && http-server dist",
+    "start": "npm run build && https-server dist",
     "test": "standard",
     "clean": "rm -rf dist",
     "build": "npm run clean && mkdir dist && npm run build-html && npm run build-css && npm run build-js",
-    "build-html": "cp index.html dist/index.html",
+    "build-html": "cp index.html dist/index.html ",
     "build-css": "cp memo_game.css dist/memo_game.css",
     "build-js": "browserify memo_game.js --outfile dist/memo_game.js --transform babelify"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chuckberry1974/Project_game"
+    "url": "git+https://github.com/chuckberry1974/Project_game.git"
   },
-  "keywords": [
-    "Project_game"
-  ],
-  "author": "Steve",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chuckberry1974/Project_game/issues"
   },
   "homepage": "https://github.com/chuckberry1974/Project_game#readme",
   "dependencies": {
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18",
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
-    "http-server": "^0.8.5"
-  },
-}
+    "http-server": "^0.8.5",
+    "standard"
