@@ -20,7 +20,7 @@ body.addEventListener('click', function (event) {
     if (currentPlayer === 'one') {
       if (first_pick === second_pick) { // check if same pic for both cards
 
-      }else {
+      } else {
         setTimeout(function () {
           card.src = back_card
           first_pick_card.src = back_card
