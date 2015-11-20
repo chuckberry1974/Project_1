@@ -2,7 +2,6 @@ var currentPlayer = 'one'
 var first_pick = 0
 var second_pick = 0
 var first_pick_card
-var score1
 // var score2
 var back_card = 'images/Back_card.jpeg'
 var front_card = ['images/img1.png', 'images/img2.png', 'images/img2.png', 'images/img1.png', 'images/img3.png', 'images/img3.png', 'images/img4.jpeg', 'images/img4.jpeg', 'images/img5.png', 'images/img5.png', 'images/img6.png', 'images/img6.png', 'images/img7.png', 'images/img7.png', 'images/img8.png', 'images/img8.png', 'images/img9.png', 'images/img9.png']
@@ -28,13 +27,12 @@ body.addEventListener('click', function (event) {
         }, 2000)
       }
     // }else if (currentPlayer === 'two') {
-    first_pick = 0
+      first_pick = 0
+      second_pick = 0
+    }
+  } else {
+    first_pick = front_card[card.id]
+    first_pick_card = card
     second_pick = 0
-  }
-
-   } else {
-   first_pick = front_card[card.id]
-   first_pick_card = card
-   second_pick = 0
   }
 })
