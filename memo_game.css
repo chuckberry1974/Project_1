@@ -1,0 +1,67 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: lightgrey;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#title-bar {
+  flex: none;
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#title-bar h1 {
+ color: white;
+ font-size: 28px;
+ text-align: center;
+}
+
+.game-main-frame {
+  flex: auto;
+  background-color: white;
+  display: flex;
+}
+
+.side-bar {
+  background-color: red;
+  width: 200px;
+  flex: none;
+}
+
+.side-bar button {
+
+  display: block;
+  position: relative;
+  size: 10%;
+}
+
+
+#reset {
+  font-size: 150%;
+  position: relative;
+  color: orange;
+  background-color: black;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-left: 25%;
+
+.game-board {
+  background: aliceblue;
+  flex: auto;
+}
+
+.game-board .cards {
+  margin: 0 0 5px 5px;
+  display: inline-block;
+}
+
+.game-board .cards img {
+}
