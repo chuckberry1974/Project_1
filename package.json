@@ -7,8 +7,9 @@
     "start": "npm run build && http-server dist",
     "test": "standard",
     "clean": "rm -rf dist",
-    "build": "npm run clean && mkdir dist && npm run build-html && npm run build-css && npm run build-js",
+    "build": "npm run clean && mkdir dist && npm run build-html && npm run build-css && npm run build-js && npm run build-images",
     "build-html": "cp index.html dist/index.html ",
+    "build-images": "cp -R images dist/images ",
     "build-css": "cp memo_game.css dist/memo_game.css",
     "build-js": "browserify memo_game.js --outfile dist/memo_game.js --transform babelify"
   },
